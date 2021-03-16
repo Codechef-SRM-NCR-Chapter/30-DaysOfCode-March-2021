@@ -1,9 +1,11 @@
-# 30 Days of code
+# code_N_conquer: 30 days of code
 
 <img src="./.github/logo.png" height="70" align="left"/>
 
-30 Days of Code is a Event organized by Codechef SRM NCR Chapter where you have to solve questions daily for 30 days.
-This will help you become regular and improve your coding practices.
+code_N_conquer presented by SRM CODECHEF chapter is an initiative to target young minds who have just stepped into coding. In this 30 day challenge, participants will get questions on a daily basis for a duration of one month. The participants will be challenged with questions with basic concepts and this will help in maintaining a flow to their daily programming progress. Participants will commit to the repositories and post their answers to the problems provided to them.
+So, prepare you laptops; Brains ON
+
+Ready; Set; Code
 
 ## File Structure
 ```

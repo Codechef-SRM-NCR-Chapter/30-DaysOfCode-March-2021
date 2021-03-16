@@ -7,7 +7,6 @@ This will help you become regular and improve your coding practices.
 
 ## File Structure
 ```
-
 ├── answers
 │   ├── someotherusername
 │   │   └── Day1
@@ -24,7 +23,6 @@ This will help you become regular and improve your coding practices.
     │   └── README.md
     └── Day2
         └── README.md
-
 ```
 
 * Questions Folder include questions for each day

@@ -9,15 +9,22 @@ This will help you become regular and improve your coding practices.
 ```
 
 ├── answers
+│   ├── someotherusername
+│   │   └── Day1
+│   │       └── question1.py
 │   └── yourusername
-│       ├── Day1_submittion.py
-│       └── Day2_submittion.py
+│       ├── Day1
+│       │   ├── question1.py
+│       │   └── question2.py
+│       └── Day2
+│           ├── question1.py
+│           └── question2.py
 └── questions
-    ├── Day 1
+    ├── Day1
     │   └── README.md
-    └── Day 2
+    └── Day2
         └── README.md
-        
+
 ```
 
 * Questions Folder include questions for each day

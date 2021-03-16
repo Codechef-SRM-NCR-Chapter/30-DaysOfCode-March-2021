@@ -10,12 +10,12 @@ This will help you become regular and improve your coding practices.
 
 ├── answers
 │   └── yourusername
-│       ├── 1.py
-│       └── 2.py
+│       ├── Day1_submittion.py
+│       └── Day2_submittion.py
 └── questions
-    ├── 1
+    ├── Day 1
     │   └── README.md
-    └── 2
+    └── Day 2
         └── README.md
         
 ```

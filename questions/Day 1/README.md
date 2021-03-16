@@ -1,15 +1,10 @@
 # DAY 1
-## QUESTION1
-* Write a Program to print the following series:
-3,12,33,72,………………,n terms
-Where “n” is a user input parameter.
+## Question 1
+<p align="center">
+  <img width="auto" height="500" src="../../.github/Day1-1.jpeg">
+</p>
 
-## QUESTION 2
- * Write a Program to print the given pattern:
-```
-
-             *
-          *  *
-       *  *  *
-    *  *  *  *
-```
+## Question 2
+<p align="center">
+  <img width="auto" height="500" src="../../.github/Day1-2.jpeg">
+</p>

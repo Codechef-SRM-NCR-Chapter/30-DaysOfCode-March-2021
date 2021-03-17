@@ -1,4 +1,4 @@
-// Question 1A
+// Question 1
 
 #include <iostream>
 #include <cmath>

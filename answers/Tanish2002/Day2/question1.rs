@@ -8,7 +8,6 @@ fn main() {
     input_string = input_string.trim_end_matches('\n').to_string();
     let input: u32 = input_string
         .trim()
-        .replace("\n", "")
         .parse::<u32>()
         .expect("Your input was not an integer");
     let mut value = 0;

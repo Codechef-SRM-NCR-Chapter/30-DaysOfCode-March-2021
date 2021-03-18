@@ -1,10 +1,6 @@
 num=int(input("Enter number"))
-n=num
-nnum=0
-while(n>0):
-    r=n%10
-    nnum+=r*(10**(len(str(n))-1))
-    n//=10
+nnum = int(str(num)[::-1])
+print(nnum)
 n=nnum if nnum>num else num
 i=2
 while(i<n):
@@ -15,5 +11,3 @@ while(i<n):
         flag=True
     i+=1
 print(num,'is Emirp number') if flag==True else print(num,'is not Emirp number') 
-   
-      

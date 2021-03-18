@@ -1,7 +1,8 @@
-#include<iostream.h>
+#include<iostream>
 #include<conio.h>
 #include<math.h>
-void emirp(int b)
+using namespace std;
+int emirp(int b)
 {
 int rem,rev=0;
 while(b!=0)
@@ -15,19 +16,18 @@ cout<<"Its an emirp";
 else
 cout<<"Its not an emirp";
 }
-void prime(int a)
+int prime(int a)
 {
 if(a==2||a%2!=0)
 emirp(a);
 else
 cout<<"Number is not prime";
 }
-void main()
+int main()
 {
-clrscr();
 int z;
 cout<<"Enter a number";
 cin>>z;
 prime(z);
-getch();
+return 0;
 }

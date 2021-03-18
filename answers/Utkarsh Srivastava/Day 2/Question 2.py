@@ -1,18 +1,13 @@
 n = int(input())
-e = 0
+a = len(str(n))
+c = n
 s = 0
-for i in range(2,n):
-    if(n%i == 0):
-        e = 1
-if(e==0):
-    while (n != 0):
-        b = n%10
-        n = int(n/10)
-        s = s*10+b
-for i in range(2,s):
-    if(s%i == 0):
-        e = 1
-if(e!=1):
-    print("It is a Emirp number")
+while (n != 0):
+    b = n%10
+    n = int(n/10)
+    s = s + b**a
+    a-=1
+if(s==c):
+    print("It is a Disarium number")
 else:
-    print("It is not a Emirp number")
+    print("It is not a Disarium number")

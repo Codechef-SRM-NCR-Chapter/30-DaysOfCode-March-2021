@@ -6,7 +6,6 @@ for i in range(2,n):
         e = 1
 if(e==0):
     while (n != 0):
-        b = n%10
         n = int(n/10)
         s = s*10+b
 for i in range(2,s):

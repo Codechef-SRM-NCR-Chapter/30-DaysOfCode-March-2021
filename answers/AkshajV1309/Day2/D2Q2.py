@@ -1,6 +1,5 @@
 num=int(input("Enter number"))
 nnum = int(str(num)[::-1])
-print(nnum)
 n=nnum if nnum>num else num
 i=2
 while(i<n):

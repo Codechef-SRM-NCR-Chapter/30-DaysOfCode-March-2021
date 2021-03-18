@@ -23,11 +23,11 @@ sum=sum+p;
 d=sum+u;
 if(a==d)
 {
-cout<<"Its a disarm number";
+cout<<"Its a disarium number";
 }
 else
 {
-cout<<"Its not a disarm number";
+cout<<"Its not a disarium number";
 }
 return 0;
 }

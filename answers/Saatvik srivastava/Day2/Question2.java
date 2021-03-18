@@ -24,8 +24,8 @@ import java.util.*;
             count=1;
         }
         if(count!=0)
-        System.out.println(num+" is not an Emirp number");
+        System.out.println(num+" IS NOT A EMIRP NUMBER");
         else
-        System.out.println(num+" is an Emirp Number");
+        System.out.println(num+" IS A EMIRP NUMBER");
     }
 }

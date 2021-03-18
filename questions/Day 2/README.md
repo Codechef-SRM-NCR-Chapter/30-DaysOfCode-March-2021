@@ -1,5 +1,11 @@
-# Question 2 - OOP
-question info...................................................................................................
+# DAY 1
+> '' A little progress each day adds up to big results''.
+### Question 1
+<p align="center">
+  <img width="auto" height="auto" src="../../.github/Day2-1.jpeg">
+</p>
 
-## Some More Info
-some more info about the question maybe hints or something
+### Question 2
+<p align="center">
+  <img width="auto" height="auto" src="../../.github/Day2-2.jpeg">
+</p>

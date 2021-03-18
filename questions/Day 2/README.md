@@ -1,4 +1,4 @@
-# DAY 1
+# DAY 2
 > '' A little progress each day adds up to big results''.
 ### Question 1
 <p align="center">

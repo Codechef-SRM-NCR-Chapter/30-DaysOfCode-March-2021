@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Question_4
+class Question_2
 {
     int no;
     int s;

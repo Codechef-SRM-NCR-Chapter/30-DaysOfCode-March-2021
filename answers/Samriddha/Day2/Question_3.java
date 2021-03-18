@@ -1,5 +1,5 @@
 import java.util.*;
-class Question_3
+class Question_1
 {
     int x, rev,f,x1;
     Question_3(int x2)

@@ -1,5 +1,5 @@
 
-# DAY 1
+# DAY 3
 > 'The question is not, will you start ? 
 but, will you finish ?'
 ### Question 1

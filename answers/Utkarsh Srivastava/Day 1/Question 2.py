@@ -1,8 +1,8 @@
-k = 8 
-for i in range (5):
-    for j in range(k):
-        print(end=" ")
-    k -= 2
-    for j in range (i):
-        print('* ',end="")
+n = int(input())
+for i in range(n):
+    for j in range(n):
+        if( j < n-i-1):
+            print("  ",end="")
+        else:
+            print("* ",end="")
     print()

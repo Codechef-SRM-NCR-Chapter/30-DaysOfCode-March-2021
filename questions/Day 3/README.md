@@ -1,7 +1,7 @@
 
 # DAY 1
-> ''"The question is not, will you start ? 
-but, will you finish ?"'.''
+> 'The question is not, will you start ? 
+but, will you finish ?'
 ### Question 1
 <p align="center">
   <img width="auto" height="auto" src="../../.github/Day3-Q1.jpg">

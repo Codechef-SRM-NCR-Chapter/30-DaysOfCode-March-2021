@@ -4,10 +4,10 @@
 but, will you finish ?'
 ### Question 1
 <p align="center">
-  <img width="auto" height="auto" src="../../.github/Day3-Q1.jpg">
+  <img width="auto" height="auto" src="../../.github/Day3-1.jpg">
 </p>
 
 ### Question 2
 <p align="center">
-  <img width="auto" height="auto" src="../../.github/Day3-Q2.jpg">
+  <img width="auto" height="auto" src="../../.github/Day3-2.jpg">
 </p>

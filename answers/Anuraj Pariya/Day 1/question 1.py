@@ -8,4 +8,3 @@ def series_ele(n):
 if __name__ == "__main__":
     input_number = int(input("Enter a number upto which you want to print the patter: "))
     print(series_ele(input_number))
-

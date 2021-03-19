@@ -10,5 +10,3 @@ while(i<n):
         flag=True
     i+=1
 print(num,'is Emirp number') if flag==True else print(num,'is not Emirp number') 
-   
-      

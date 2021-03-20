@@ -1,0 +1,10 @@
+#+TITLE: Tanish2002's 30 Days of code
+#+STARTUP: showeverything
+** How to run
+- Install Rust toolchain from [[https://rustup.rs/][rustup.rs]]
+- cd inside any folder, example- Day 1 and DO-:
+#+begin_example
+$ cargo run --bin question1
+ or
+$ cargo run --bin question2
+#+end_example

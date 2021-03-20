@@ -11,6 +11,6 @@ def pfactor(n):
             n/=i
     if n>2:
         l.append(n)
-    print(l)
+    print(str(l).lstrip("[").rstrip("]"))
 pfactor(n)
     

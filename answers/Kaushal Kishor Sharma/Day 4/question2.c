@@ -6,7 +6,7 @@ int main()
 
    int rows, digit = 1;
 
-   printf("Enter the initialDigitber of rows: ");
+   printf("Enter the number of rows: ");
    scanf("%d", &rows);
 
    for (int i = 1; i <= rows; i++) 

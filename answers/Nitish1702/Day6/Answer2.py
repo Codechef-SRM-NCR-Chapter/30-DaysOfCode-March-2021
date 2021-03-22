@@ -10,11 +10,8 @@ def sub():
                 s+=int(arr[i])
             for k in range (0,j):
                 if i+k<=length and i+j<= length :
-                    
                     s+=int(arr[i+k])
-                    
                 else:
-                    
                     continue
     print(s)
 sub()

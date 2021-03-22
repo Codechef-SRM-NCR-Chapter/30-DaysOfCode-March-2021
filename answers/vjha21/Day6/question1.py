@@ -19,7 +19,7 @@ def is_gratest_candy(candy_list, current_candy):
     return greatest
 
 if __name__ == "__main__":
-    #candies = [2,3,5,1,3]
-    candies = [2,3,5,1,3,7,8,1,1,1]
+    candies = [2,3,5,1,3]
+    #candies = [2,3,5,1,3,7,8,1,1,1]
     extra_candies = 3
     print(candy_distributor(candies, extra_candies))

@@ -1,10 +1,16 @@
-import math
-n = input("Enter the number : ")
-l = list(n)
-a = 0
-for i in range(len(l)):
-    a += math.pow(int(l[i]), i+1)
-if int(a)==int(n):
-    print(n, "is a Disarium number.")
+def isprime(num):
+    if num<=1:
+        return False
+    if num>1:
+        for i in range(2,num):
+            if num%i == 0:
+                return False
+    return True
+
+n = input("Enter a number: ")
+rev_num = int(n[::-1])
+n = int(n)
+if isprime(n) and isprime(rev_num):
+    print(f"{n} is an Emirp number.")
 else:
-    print(n, "is not a Disarium number.")
+    print(f"{n} is not an Emirp number.")

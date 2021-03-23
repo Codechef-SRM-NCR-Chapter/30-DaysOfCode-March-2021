@@ -4,3 +4,4 @@ target = [ ]
 for i in range(len(index)):
     target.insert(index[i],nums[i])
 print("The target array is : ",target)
+ 

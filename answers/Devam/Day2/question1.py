@@ -1,0 +1,10 @@
+n=int(input())
+x=n
+s=0
+l=len(str(n))
+while(x>0):
+    r=x%10
+    s=s+r**(l)
+    l=l-1
+    x=x//10
+print(s)

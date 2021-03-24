@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h> 
 int main()
 {
     int arr1[100], n,ctr=0;

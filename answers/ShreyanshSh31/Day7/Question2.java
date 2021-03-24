@@ -1,5 +1,5 @@
 import java.util.*;
-class Question_14
+class array
 {
     static Scanner sc= new Scanner(System.in);
     static int arr[];

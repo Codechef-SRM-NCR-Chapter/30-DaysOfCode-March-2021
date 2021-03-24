@@ -4,6 +4,7 @@ r=[]
 for i in range(0,len(o)-1):
     if o[i]==o[i+1]:
         r.append(o[i])
+r=list(set(r))
 o=set(o)
 while(len(r)>0):
     o.remove(r[0])

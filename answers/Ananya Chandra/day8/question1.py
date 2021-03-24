@@ -18,4 +18,4 @@ except:# if the input is not-integer, just continue to the next step
     for i in repeat:
         unique.remove(i)
     print("The unique elements are ",unique)
-    print("sum: ",s)
+    print("The sum is : ",s)

@@ -2,8 +2,6 @@ arr = input("Enter number")
 num = arr.split()
 num = [int(i) for i in num]
 
-z = []
-
 def maxsubarraysum(x,y):
     max1 = x[0]
     max2 = x[0]

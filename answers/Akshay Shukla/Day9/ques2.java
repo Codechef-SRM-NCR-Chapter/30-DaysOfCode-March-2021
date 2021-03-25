@@ -11,7 +11,7 @@ class ques2d9
         else
         {
             int sum=0;
-            for (int i = start; i < end; i++)
+            for (int i = start; i <= end; i++)
             {
                 sum+=arr[i];
             }

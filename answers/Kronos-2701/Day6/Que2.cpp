@@ -6,17 +6,17 @@ int main()
 
 {
 
-    int size;
+    int n;
 
     cout<<"Enter the size of array: ";
 
-    cin>>size;
+    cin>>n;
 
-    int arr[size];
+    int arr[n];
 
     cout<<"Enter the elements of array: ";
 
-    for(int i=0;i<size;i++)
+    for(int i=0;i<n;i++)
 
     {
 
@@ -26,11 +26,11 @@ int main()
 
     int sum = 0;
 
-    for (int i = 0; i < size; i++) 
+    for (int i = 0; i < n; i++) 
 
     {
 
-        for (int j = i; j < size; j += 2)
+        for (int j = i; j < n; j += 2)
 
         {
 
@@ -46,7 +46,7 @@ int main()
 
     }
 
-    cout<<"Sum is all odd possible sub arrays is : "<<sum;
+    cout<<"Sum of all odd possible sub arrays is : "<<sum;
 
     return 0;
 

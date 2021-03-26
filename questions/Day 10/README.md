@@ -1,7 +1,7 @@
 # DAY 10
->  Everyday is a hustle.
->  Will you get tired?~yes♤
->  Will you give up?~ No◇
+>  Everyday is a hustle  
+Will you get tired?\~yes♤  
+Will you give up?\~No◇
 
 ### Question 1
 <p align="center">

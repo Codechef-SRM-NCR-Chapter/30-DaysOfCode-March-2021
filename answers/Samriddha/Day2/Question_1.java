@@ -44,7 +44,7 @@ class Question_1
         Scanner sc= new Scanner(System.in);
         System.out.println("Enter the number of your choice:");
         e=sc.nextInt();
-        Question_3 emp=new Question_3(e);
+        Question_1 emp=new Question_1(e);
         emp.isEmirp();
 
     }

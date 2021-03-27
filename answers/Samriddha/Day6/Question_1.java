@@ -44,7 +44,7 @@ class Question_1
     }
     public static void main(String args[])
     {
-        Question_12 obj = new Question_12();
+        Question_1 obj = new Question_1();
         obj.get_value();
         for(int i = 0;i<n;i++)
         {

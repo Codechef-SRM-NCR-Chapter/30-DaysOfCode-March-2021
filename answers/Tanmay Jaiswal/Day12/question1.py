@@ -7,7 +7,7 @@ count = 0
 
 str = input("Enter Strings: ")
 if len(str) > n:
-    print("Error! Only 15 characters allowed!")
+    print("Error! length of characters exceeded!")
     sys.exit()
     
 for i in range(m):

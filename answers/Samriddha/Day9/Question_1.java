@@ -39,7 +39,7 @@ class Question_1
     }
     public static void main(String args[])
     {
-        Question_17 obj = new Question_17();
+        Question_1 obj = new Question_1();
         System.out.print("Enter the length of the array : ");
         int l = sc.nextInt();
         int nums[]=new int[l];

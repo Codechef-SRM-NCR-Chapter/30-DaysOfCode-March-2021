@@ -37,7 +37,7 @@ class Question_2
         Scanner in = new Scanner(System.in);
         System.out.print("Enter a number of your choice : ");
         int x = in.nextInt();
-        Question_4 obj = new Question_4(x);
+        Question_2 obj = new Question_2(x);
         obj.DigitCounting();
         obj.FinalCheck();
     }

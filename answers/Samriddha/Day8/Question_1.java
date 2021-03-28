@@ -48,7 +48,7 @@ public class Question_1
     }
     public static void main(String args[])
     {
-        Question_15 obj =new Question_15();
+        Question_1 obj =new Question_1();
         obj.get_value();
         obj.freq();
     }

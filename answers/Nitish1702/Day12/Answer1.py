@@ -8,6 +8,6 @@ for _ in range(l[1]):
     elif n[0]=='2':
         sub=s[int(n[1])-1:int(n[2])]
         if sub==list(reversed(sub)):
-            print('Yes')
+            print('YES')
         else:
-            print('No')
+            print('NO')

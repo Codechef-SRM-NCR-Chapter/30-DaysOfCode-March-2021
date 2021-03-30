@@ -17,7 +17,7 @@ public class SumDig
     public static int sumDig(int a[],int i)
     {
         if(i==a.length)
-            return 1;
+            return 0;
         return a[i]+sumDig(a,i+1);
     }
 }

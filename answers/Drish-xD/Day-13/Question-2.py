@@ -10,7 +10,7 @@ def palindrome(array, s, l):
         return False
 
 
-arr = [1, 0, 1]
+arr = list(map(int, input("Enter the elements of the list *with space b/w the numbers* : ").split()))
 l = len(arr)
 s = 0
 if palindrome(arr, s, l):

@@ -1,11 +1,19 @@
 #include <stdio.h>
-int search(int a[], int size, int key)
+int search(int arr[], int initial, int last)
 {
-    int pos =0;
-    while((pos<size)&&(a[pos]!=key))
-    pos++;
-    if(pos<size)
-    return pos;
+    while (initial <= last) {
+        int mid = (initial + last) / 2;
+  
+        if (arr[mid] == 1 && (mid == 0 || arr[mid - 1] == 0))
+            return mid;
+  
+        else if (arr[mid] == 1)
+            last = mid - 1;
+  
+        else
+            initial = mid + 1;
+    }
+ 
     return -1;
 }
 int main()
@@ -21,8 +29,7 @@ int main()
     scanf("%d",&a[i]);
     }
     int z;
-    int key = 1;
-    z=search(a,size,key);
+    z=search(a,0,size-1);
     if(z==-1)
     {
     printf("No 1");

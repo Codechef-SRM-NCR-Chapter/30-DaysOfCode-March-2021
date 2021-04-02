@@ -1,25 +1,41 @@
 #include <iostream>
 using namespace std;
-int indexof1(int arr[],int n)
+int indexof1(int arr[],int l,int n)
 {
-    int i;
-    i=n/2;
-    while(i<n)
+    int mid;
+    mid=l+(n-l)/2;
+    while(l<n)
     {
-        if(arr[i]==0)
-        i++;
-        else if(arr[i]==1)
+        if(arr[mid]==0)
         {
-            if(arr[i-1]==0 && arr[i]==1)
+            if(arr[mid+1]==1)
             {
-                return i;
+                return mid+1;
                 break;
             }
             else
-            i--;
+            {
+                l=mid+1;
+                indexof1(arr,l,n);
+                break;
+            }
+        }
+        else if(arr[mid]==1)
+        {
+            if(arr[mid-1]==0)
+            {
+                return mid;
+                break;
+            }
+            else
+            {
+                n=mid-1;
+                indexof1(arr,l,n);
+                break;
+            }
         }
     }
-    if(i==n)
+    if(l==n)
     return n;
 }
 int main()
@@ -32,7 +48,7 @@ int main()
     {
         cin>>arr[i];
     }
-    i = indexof1(arr,n);
+    i = indexof1(arr,0,n);
     if(i==n)
     cout<<"No 1 is there";
     else

@@ -1,30 +1,24 @@
 #include <iostream>
 using namespace std;
-int noof1(int arr[],int n)
+int noof1(int arr[],int l,int n)
 {
-   int i,ctr=0;
-   i=n/2;
-   while(i>=0)
-   {
-       if(arr[i]==0)
-       {
-           i--;
-       }
-       else if(arr[i]==1)
-       {
-           if(arr[i+1]==0 && arr[i]==1)
-           {
-               for(int j=0;j<=i;j++)
-               {
-                   ctr++;
-               }
-               return ctr;
-               break;
-           }
-           else 
-           i++;
-       }
-   }
+    if (n >= l)
+    {
+        int mid = l + (n - l)/2;
+        
+        if ((mid == n || arr[mid+1] == 0) && (arr[mid] == 1))
+        {
+            return mid+1;
+        }
+        if (arr[mid] == 1)
+        {
+            return noof1(arr, (mid + 1), n);
+        }
+        
+        return noof1(arr, l, (mid -1));
+    }
+    
+    return 0;
 }
 int main()
 {
@@ -36,7 +30,7 @@ int main()
     {
         cin>>arr[i];
     }
-    i = noof1(arr,n);
+    i = noof1(arr,0,n-1);
     cout<<"No. of 1 is "<<i;
     return 0;
 }

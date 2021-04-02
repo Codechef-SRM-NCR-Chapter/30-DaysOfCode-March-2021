@@ -1,19 +1,19 @@
 #include <stdio.h>
-int search(int a[], int size, int key)
+int count(int arr[], int L, int R)
 {
-    int count = 0;
-    int pos =0;
-    while(pos<size)
-    {
-        if(a[pos]==key)
-        {
-            count++;
-        }
-        
-    pos++;
-    }
-    return count;
-    
+  if (R >= L)
+  {
+    int mid = L + (R - L)/2;
+
+    if ( (mid == R || arr[mid+1] == 0) && (arr[mid] == 1))
+      return mid+1;
+
+    if (arr[mid] == 1)
+      return count(arr, (mid + 1), R);
+
+    return count(arr, L, (mid -1));
+  }
+  return 0;
 }
 int main()
 {
@@ -28,8 +28,7 @@ int main()
     scanf("%d",&a[i]);
     }
     int z;
-    int key = 1;
-    z=search(a,size,key);
+    z=count(a,0,size-1);
     if(z==0)
     {
     printf("No 1");

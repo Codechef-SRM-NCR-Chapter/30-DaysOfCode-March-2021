@@ -1,7 +1,7 @@
 def trans(o,beg,end):
     if end>=beg:
-        mid = beg + (end-beg)//2
-        if((mid == end or o[mid+1]==1)and(o[mid]==0)): 
+        mid=beg+(end-beg)//2
+        if((mid==end or o[mid+1]==1)and(o[mid]==0)): 
             return mid+1
         if o[mid]==0:
             return trans(o,(mid+1),end)

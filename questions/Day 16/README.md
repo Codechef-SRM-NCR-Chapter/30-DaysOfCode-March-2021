@@ -1,5 +1,5 @@
 # DAY 16
->  If the plan doesn't work change the plan but never the goal."🏁
+>  If the plan doesn't work change the plan but never the goal."🏁</br>
 Questions for Day 16 are here. Keep going, just a few more days to go! 🚀
 ### Question 1
 <p align="center">

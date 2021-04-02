@@ -1,2 +1,5 @@
 o=[int(x) for x in input('Enter NUMS seprated by space: ').split()]
-print("There are",sum(o),"1s in the binary array")
+for i in range(len(o)):
+    if o[i]==0:
+        print("No. of 1s=",i)
+        break

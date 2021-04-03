@@ -11,7 +11,7 @@ class Question_1
     }
     static void quadruple(int arr[], int n, int a)
     {
-        HashMap<Integer, pair> mp = new HashMap<Integer, pair>();
+        HashMap<Integer, pair> mp = new HashMap();
         for (int i = 0; i < n - 1; i++)
             for (int j = i + 1; j < n; j++)
                 mp.put(arr[i] + arr[j], new pair(i, j));
@@ -35,15 +35,13 @@ class Question_1
         int n = sc.nextInt();
         int arr[]=new int[n];
         System.out.println("Enter the elements of the sorted array : ");
-        int c=0;
         for(int i =0;i<n;i++)
         {
             System.out.print("Enter element no."+(i+1)+" of array : ");
             arr[i]=sc.nextInt();
         }
         System.out.print("Enter the number whose sum is to be calculated : ");
-        int x = sc.nextInt();
-        quadruple(arr, n, x);
+        int k = sc.nextInt();
+        quadruple(arr, n, k);
     }
 }
-

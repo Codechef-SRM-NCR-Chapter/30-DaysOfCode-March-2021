@@ -5,17 +5,17 @@ try:
         arr.append(int(input()))
 
 except:# if the input is not-integer, just continue to the next step
+    arr.append(0)#added to help if array has no zeroes
     l= len(arr)
-    t=l//2
-    def check(i):
-        if i<l and i>=0:
-            if arr[i]!=1:
-                return check(i-1)
+    def check(m,n,t):
+        if(n>m):
+            mid=(m+n)//2
+            if arr[mid] == 0:
+
+                return check(m,mid,mid)
             else:
-                arr[i]=0
-                return 1+check(i-1)+check(i+1)
+                return check(mid+1,n,t)
         else:
-            return 0
+            return t
 
-
-print(check(t))
+    print(check(0,l,0))

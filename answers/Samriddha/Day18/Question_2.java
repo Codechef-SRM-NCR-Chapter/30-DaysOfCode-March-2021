@@ -1,5 +1,5 @@
 import java.util.*;
-class Question_36
+class Question_2
 {
     static int Bit_counting(int x)
     {

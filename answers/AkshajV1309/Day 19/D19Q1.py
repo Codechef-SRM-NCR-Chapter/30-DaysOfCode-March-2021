@@ -8,5 +8,5 @@ while(i<=N):
     else:
          c.insert(1,i)
     i+=1
-print(c)
+print('Output:',c)
             

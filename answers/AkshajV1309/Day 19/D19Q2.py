@@ -5,8 +5,4 @@ for i in range(0,N-2):
         for k in range(j+1,N):
             if (o[i]+o[j]+o[k]<X):
                 c+=1
-print('Output: ',c)
-    
-
-  
-
+print('Output:',c)

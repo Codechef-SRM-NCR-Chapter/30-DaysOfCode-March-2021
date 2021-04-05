@@ -9,4 +9,3 @@ while(i<=N):
          c.insert(1,i)
     i+=1
 print('Output:',c)
-            

@@ -15,8 +15,7 @@ int main(){
              z++;
             }
           }
-        cout<<z<<endl;
-        for (int l = 0; l < z; l++) {
+          for (int l = 0; l < z; l++) {
             cout<<ar[l];
         }
         cout<<endl;

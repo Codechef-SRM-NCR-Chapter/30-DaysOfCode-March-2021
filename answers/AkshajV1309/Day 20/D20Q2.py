@@ -8,6 +8,3 @@ for i in X:
             r='False'
             break
 print('Output:',r)
-
- 
-

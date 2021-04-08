@@ -8,6 +8,3 @@ for i in range(len(S)-1,-1,-1):
             T.extend([c,S[i]])
     print(T)
 print(-1) if len(T)==0 else print("".join(T[::-1]))
-
-
-

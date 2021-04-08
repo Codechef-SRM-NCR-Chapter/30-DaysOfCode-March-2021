@@ -7,4 +7,4 @@ def run(string):
     return string
 
 
-print(run('101001'))
+print(run(input()))

@@ -22,9 +22,3 @@ while(T>0):
     T-=1
 for C in F:
  print(C)
-
- 
-
-        
-        
-    

@@ -8,21 +8,21 @@ for i in range(n):
     while i>(s+(2**t)):#using permutation to eliminate some previous numbers and calculate the number of digits in this paticular number
         s=s+(2**t)
         t+=1#counting number of digits
-
     for j in range(t):
         queue.append(1)
-    
+
     d=t-1
     while d > 0:
         if (i > s + (2 ** d)):
             queue[t - 1 - d] = 2
-            s = s + (2 ** d) + 1
-            print(s)
+            s = s + (2 ** d)
         d = d - 1
-    if i == s + 1:
+    if i == s + 2:
         queue[t - 1] = 2
-    print(queue)
-       
+    for i in queue:
+        print(i,end="")
+    print()
+
 
 
 

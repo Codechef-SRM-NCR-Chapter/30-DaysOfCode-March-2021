@@ -4,9 +4,11 @@ while t>0:
     n = int(input())
     if(n==1):
         print(1)
+        t-=1
         continue
     elif(n==2):
         print(2)
+        t-=1
         continue
     q = deque()
     q.append('1')

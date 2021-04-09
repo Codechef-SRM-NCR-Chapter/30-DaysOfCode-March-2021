@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    string string = "JavaScript";
+    int count = 0;
+    int length = string.length();
+    for (int i = 0; i < length; i++) {
+        if (isupper(string[i])){
+            cout<<endl;
+            count++;
+        }
+        cout<<string[i];
+    }
+    cout<<endl<<count;
+    return 0;
+}

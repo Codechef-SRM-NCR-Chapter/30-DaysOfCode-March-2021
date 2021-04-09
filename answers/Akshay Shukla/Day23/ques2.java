@@ -1,20 +1,28 @@
 import java.util.*;
 class ques2d23
 {
-    static int nth(int n)
+    static void nth(Deque dq,int n)
     {
-         int arr[] = new int[n + 1];
-        arr[1] = 1;
-        arr[2] = 2;
-  
-        for (int i = 3; i <= n; i++) {
-            
-            if (i % 2 != 0)
-                arr[i] = arr[i / 2] * 10 + 1;
-            else
-                arr[i] = arr[(i / 2) - 1] * 10 + 2;
+        if(n==1)
+        {
+            dq.add(1);
+            return;
         }
-        return arr[n];
+        else if(n==2)
+        {
+            dq.add(2);
+            return;
+        }
+        else if(n%2==0)
+        {
+            dq.add(2);
+            nth(dq,(n/2)-1);
+        }
+        else
+        {
+            dq.add(1);
+            nth(dq,n/2);
+        }
     }
     public static void main(String args[])
     {
@@ -23,9 +31,16 @@ class ques2d23
         int t=sc.nextInt();
         System.out.println("Enter integer n : ");
         int n[]=new int[t];
+        Deque<Integer> dq=new LinkedList<Integer>();
         for(int i=0;i<t;i++)
             n[i]=sc.nextInt();
         for(int i=0;i<t;i++)
-            System.out.println(nth(n[i]));
+        {
+            nth(dq,n[i]);
+            int l=dq.size();
+            for(int j=0;j<l;j++)
+            System.out.print(dq.removeLast());
+            System.out.println();
+        }
     }
 }

@@ -2,7 +2,7 @@ from collections import deque
 T,F=int(input('Enter Test Cases')),[]
 while(T>0):
     N=int(input('Enter N'))
-    if N in [1,2]:
+    if N in [0,1,2]:
         F.append(N)
         T-=1
         continue

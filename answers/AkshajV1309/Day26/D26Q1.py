@@ -11,4 +11,3 @@ while(T>0):
     T-=1
 for i in F:
     print('Output:',i)
-

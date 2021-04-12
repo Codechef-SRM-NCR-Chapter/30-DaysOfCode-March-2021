@@ -1,8 +1,8 @@
 from collections import deque
-T,F=int(input('Enter Test Cases')),[]
+T,F=int(input('Enter Test Cases: ')),[]
 while(T>0):
-    N=int(input('Enter N'))
-    if N in [1,2]:
+    N=int(input('Enter N: '))
+    if N in [0,1,2]:
         F.append(N)
         T-=1
         continue
@@ -21,4 +21,4 @@ while(T>0):
     F.append(Q[-1])
     T-=1
 for C in F:
- print(C)
+ print('Output:',C)

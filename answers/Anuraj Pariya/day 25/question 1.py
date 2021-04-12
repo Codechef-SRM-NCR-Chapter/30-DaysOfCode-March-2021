@@ -1,10 +1,23 @@
-def min_step(x , y , n):
-    ans=0
-    for i in range (n):
-        ans+=(abs(x-i)+abs(n-0))
-    return ans
-n=int(input('enter number'))
-x=int(input('enter no.'))
-y=0
-print(min_step(x , y , n))
+inp = int(input("Enter number of test cases: "))
+n = []
+for i in range(0 , inp):
+    m = int(input("Enter number of steps: ")) 
+    n.append(m)
+sm = 0
+step = 0
+
+def smcount(x , count):
+    global sm
+    if count == step:
+        sm += abs(x)
+        return
+    smcount(x + 1 , count + 1)
+    smcount(x - 1 , count + 1)
+    smcount(x , count + 1)
+
+for i in n:
+    sm = 0
+    step = i
+    smcount(0 , 0)
+    print(sm)
     

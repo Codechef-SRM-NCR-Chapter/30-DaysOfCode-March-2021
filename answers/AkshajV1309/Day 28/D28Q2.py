@@ -15,4 +15,5 @@ while(N>0):
     else:
         R.append(-1)
     N-=1
-print(R)
+for i in R:
+    print('Output:',i)

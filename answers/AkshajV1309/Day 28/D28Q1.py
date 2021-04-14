@@ -1,6 +1,7 @@
 import math
 N=int(input('Enter Size: '))
 O=[int(x) for x in range(1,N+1)]
+print('Output:')
 if sum(O)%2!=0:
     print('No')
 else:

@@ -12,5 +12,3 @@ else:
     print(A)
     print(N-len(A))
     print(O[t-s:-s])
-
-    

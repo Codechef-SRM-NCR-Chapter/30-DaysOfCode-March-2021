@@ -9,7 +9,5 @@ else:
     t=N//2
     s=math.ceil(t/2)
     A=O[:t-s]+O[-s:]
-    print(len(A))
-    print(A)
-    print(N-len(A))
-    print(O[t-s:-s])
+    for N in [len(A),A,N-len(A),O[t-s:-s]]:
+        print(N)

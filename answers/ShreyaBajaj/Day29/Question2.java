@@ -15,7 +15,21 @@ class sum_number
 	}
 	static void check(int n)
 	{
-		if(n==2020+2020||n==2021+2021||n==2020+2021)
+		while(n>=2020)
+		{
+			if(n%2020==0)
+			n=0;
+			if(n%2021==0)
+			n=0;
+			else
+			{
+				if(n>=2020)
+				n-=2020;
+				if(n>=2021)
+				n-=2021;
+			}
+		}
+		if(n==0)
 		System.out.println("YES");
 		else
 		System.out.println("NO");

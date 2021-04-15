@@ -8,4 +8,3 @@ while(T>0):
     T-=1
 for T in R:
     print(T)
-    

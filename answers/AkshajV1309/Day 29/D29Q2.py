@@ -7,4 +7,4 @@ while(T>0):
         R.append('Yes')
     T-=1
 for T in R:
-    print(T)
+    print('Output:',T)

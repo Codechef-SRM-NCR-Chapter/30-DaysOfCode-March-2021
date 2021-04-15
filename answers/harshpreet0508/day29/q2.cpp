@@ -5,13 +5,24 @@ using namespace std;
 
 bool sum(int n)
 {
-    if(n==0)
-        return true;
-    
-    if(n%2021==0||n%2020==0)
-        return true;
+    while(n>=2020)
+    {
+        if(n%2021==0)
+            n=0;
+            
+        if(n%2020==0)
+            n=0;
         
-    if(n-2021==2020||n-2020==2021)
+        else
+        {
+            if(n>=2021)
+                n=n-2021;
+            if(n>=2020)
+                n=n-2020;
+        }
+    }
+        
+    if(n==0)
         return true;
     
     return false;
@@ -19,13 +30,15 @@ bool sum(int n)
 
 int main()
 {
-    int n;
-    cin>>n;
-    
-    if(sum(n))
-        cout<<"Yes ";
-    else
-        cout<<"No ";
-
+    int t,n;
+    cin>>t;
+    while(t--)
+    {
+        cin>>n;
+        if(sum(n))
+             cout<<"Yes\n";
+        else
+            cout<<"No\n";
+    }
     return 0;
 }

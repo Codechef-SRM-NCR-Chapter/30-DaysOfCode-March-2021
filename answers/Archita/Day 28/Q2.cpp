@@ -1,29 +1,33 @@
-#include <iostream>
-#include <string.h>
+#include <bits/stdc++.h>
 using namespace std;
-
 int main()
 {
-    int arr[20],n,k,T;
+    int t;
     cout<<"Enter number of test cases\n";
-    cin>>T;
-    for(int i=0;i<T;i++)
+    cin >> t;
+    while (t--)
     {
-        cout<<"Enter n\n";
-        cin>>n;
-        for(int i=1;i<=n;i++)
-        {
-            cin>>arr[i];
+        int n, k;
+        cout<<"Enter length of array and number of peaks\n";
+        cin >> n >> k;
+        vector<int> arr(n + 1);
+        int number = n;
+        for (int i = 2; i < n; i += 2){
+            if (k == 0)
+                break;
+            arr[i] = number--;
+            k = k - 1;
         }
-        cout<<"Enter number of peaks\n";
-        cin>>k;
-        for(int i=0;i<n;i++)
-        {
-            if(arr[i]>arr[i-1] && arr[i]>arr[i+1] && i>1 && i<n)
-            cout<<arr[i];
+        if (k){
+            cout << -1 << endl;
+            continue;
         }
-        if(i==n)
-        cout<<"-1";
+        int ctr = 1;
+        for(int i = 1; i <= n; i++){
+            if (!arr[i])
+                arr[i] = ctr++;
+        }
+        for (int i = 1; i <= n; i++)
+            cout << arr[i] <<" \n";
     }
-    return 0;
 }

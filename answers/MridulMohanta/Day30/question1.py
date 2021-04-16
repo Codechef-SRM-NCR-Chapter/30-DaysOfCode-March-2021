@@ -24,5 +24,8 @@ for i in range(0 , len(sent)):
         if sent[i] == lan1[j]:
             if len(lan1[j]) > len(lan2[j]):
                 sent[i] = lan2[j]
+        if sent[i] == lan2[j]:
+            if len(lan1[j]) == len(lan2[j]):
+                sent[i] = lan1[j]    
 
 print(" ".join(sent))

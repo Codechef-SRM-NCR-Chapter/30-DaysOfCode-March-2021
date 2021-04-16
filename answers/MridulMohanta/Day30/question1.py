@@ -7,7 +7,7 @@ lan1 = []
 lan2 = []
 
 for i in range(0 , m):
-    k = input()
+    k = input("Enter the words: ")
     z = k.split()
     lan1.append(z[0])
     lan2.append(z[1])

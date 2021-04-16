@@ -13,7 +13,7 @@ using namespace std;
 int main()
 {
 	FIO;
-	OJ;
+// 	OJ;
 	int n, m;
 	cin >> n >> m;
 	unordered_map<string, string> map;

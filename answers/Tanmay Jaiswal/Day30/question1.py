@@ -24,4 +24,4 @@ print("\nOutput:\t",end="")
 for i in x:
     for j in range(m):
         if i in a[j]:
-            print(a[j][c[j]],end=" ")
+            print(a[j][b[j]],end=" ")

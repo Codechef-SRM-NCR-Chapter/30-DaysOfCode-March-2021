@@ -1,5 +1,3 @@
-#program to print pattern(day5)
-
 def isPrime(n):
     if n==1:
         return False
@@ -11,7 +9,7 @@ def isPrime(n):
                 flag = False
                 break
     return flag
-
+n=4
 x= 1
 
 for i in range(1,n+1):
@@ -22,6 +20,3 @@ for i in range(1,n+1):
             print("*",end=" ")
         x+=1
     print("\n")
-    
-#value has been given to n according to the question  
-n=4
